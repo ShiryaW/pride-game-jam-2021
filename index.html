@@ -7,30 +7,6 @@
   </head>
   <body>
     <script src="https://kaboomjs.com/lib/0.5.1/kaboom.js"></script>
-    <script>
-      // main.js
-      // initialize kaboom context
-      const kaboomConfig = {
-        fullscreen: true,
-        global: true,
-        debug: true
-      }
-
-      const k = kaboom(kaboomConfig);
-
-      loadSprite("player", "REPLACE-ME");
-
-      /* MAIN */
-      scene("main", () => {
-        add([
-            text("ohhimark", 32),
-            pos(100, 100),
-        ]);
-
-      });
-
-      // start the game
-      start("main");
-    </script>
+    <script type="module" src="./scenes/main.js"></script>
   </body>
 </html>
